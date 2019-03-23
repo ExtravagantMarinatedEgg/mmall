@@ -10,13 +10,11 @@ import com.mmall.service.IUserService;
 import com.mmall.vo.OrderVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
-@CrossOrigin
 @Controller
 @RequestMapping("/manage/order/")
 public class OrderManageController {
