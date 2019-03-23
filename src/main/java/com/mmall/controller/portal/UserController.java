@@ -33,7 +33,7 @@ public class UserController {
      * @param session
      * @return
      */
-    @RequestMapping(value = "login.do",method = RequestMethod.GET)
+    @RequestMapping(value = "login.do")
     @ResponseBody
     public ServerResponse<User> login(String username, String password, HttpSession session){
         ServerResponse<User> response = iUserService.login(username,password);
@@ -63,7 +63,7 @@ public class UserController {
         return iUserService.checkValid(str, type);
     }
 
-    @RequestMapping(value = "get_user_info.do", method = RequestMethod.GET)
+    @RequestMapping(value = "get_user_info.do")
     @ResponseBody
     public ServerResponse<User> getUserInfo(HttpSession session) {
         User user = (User)session.getAttribute(Const.CURRENT_USER);
