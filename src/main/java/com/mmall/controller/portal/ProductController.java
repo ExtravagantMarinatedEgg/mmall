@@ -18,8 +18,8 @@ public class ProductController {
 
     @RequestMapping("detail.do")
     @ResponseBody
-    public ServerResponse<ProductDeailVo> detail(Integer peoductId) {
-        return iProductService.getProductDetail(peoductId);
+    public ServerResponse<ProductDeailVo> detail(Integer productId) {
+        return iProductService.getProductDetail(productId);
     }
 
     @RequestMapping("list.do")
