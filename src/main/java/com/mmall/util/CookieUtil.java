@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 public class CookieUtil {
 
     //todo  修改domain    .marinatedegg.top
-    private final static String COOKIE_DOMAIN = "marinatedegg.com";
+    private final static String COOKIE_DOMAIN = "www.marinatedegg.com";
     private final static String COOKIE_NAME = "mmall_login_token";
 
     public static String readLoginToken(HttpServletRequest request) {
